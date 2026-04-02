@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=1200, height=630">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{width:1200px;height:630px;overflow:hidden}
+body{background:#0a0a14;font-family:Inter,system-ui,sans-serif;display:flex;align-items:center;justify-content:center;position:relative}
+.orb{position:absolute;border-radius:50%;filter:blur(80px);pointer-events:none}
+.orb1{width:400px;height:400px;background:#7c3aed;opacity:.15;top:-80px;right:-40px}
+.orb2{width:300px;height:300px;background:#2dd4bf;opacity:.1;bottom:-60px;left:-40px}
+.orb3{width:250px;height:250px;background:#ec4899;opacity:.08;top:50%;right:30%}
+.content{position:relative;z-index:1;display:flex;align-items:center;gap:60px;padding:0 80px;width:100%}
+.left{flex:1}
+.right{display:flex;flex-direction:column;gap:12px;min-width:240px}
+.group{font-size:13px;font-weight:500;color:#6b7280;letter-spacing:4px;margin-bottom:8px}
+.pill{display:inline-block;padding:6px 18px;border-radius:20px;font-size:13px;font-weight:600;color:#2dd4bf;letter-spacing:2px;border:1px solid rgba(45,212,191,.3);background:rgba(45,212,191,.08);margin-bottom:20px}
+.title{font-size:44px;font-weight:800;color:#f0f4f8;line-height:1.1;margin-bottom:8px}
+.gradient{font-size:44px;font-weight:800;background:linear-gradient(90deg,#7c3aed,#2dd4bf,#ec4899);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;margin-bottom:18px}
+.sub{font-size:16px;color:#6b7280;line-height:1.6}
+.info-card{padding:20px 24px;border-radius:16px}
+.when-card{background:rgba(124,58,237,.08);border:1px solid rgba(124,58,237,.2)}
+.where-card{background:rgba(45,212,191,.06);border:1px solid rgba(45,212,191,.15)}
+.info-label{font-size:11px;font-weight:600;letter-spacing:3px;margin-bottom:8px}
+.when-card .info-label{color:#a78bfa}
+.where-card .info-label{color:#2dd4bf}
+.info-main{font-size:24px;font-weight:700;color:#f0f4f8;line-height:1.25;margin-bottom:4px}
+.info-sub{font-size:14px;color:#6b7280}
+</style>
+</head>
+<body>
+<div class="orb orb1"></div>
+<div class="orb orb2"></div>
+<div class="orb orb3"></div>
+<div class="content">
+  <div class="left">
+    <div class="group">AI AGENTS FOR GOOD</div>
+    <div class="pill">SESSION 02</div>
+    <div class="title">AI Agents for<br>Job Applications</div>
+    <div class="gradient">Going Practical.</div>
+    <div class="sub">Real workflows in action. Tips you can use right away.<br>All backgrounds welcome — no AI experience needed.</div>
+  </div>
+  <div class="right">
+    <div class="info-card when-card">
+      <div class="info-label">WHEN</div>
+      <div class="info-main">Friday, April 3rd</div>
+      <div class="info-sub">2:45 – 4:00 PM</div>
+    </div>
+    <div class="info-card where-card">
+      <div class="info-label">WHERE</div>
+      <div class="info-main">JCL 390</div>
+      <div class="info-sub">University of Chicago + Zoom</div>
+    </div>
+  </div>
+</div>
+</body>
+</html>
