@@ -9,7 +9,8 @@ UChicago student-led group site: landing page, per-session invite cards, links t
 ## Deploy
 
 - **Host:** Vercel, static HTML/CSS (no build).
-- **Trigger:** Push to `main` on the connected Git repo redeploys production.
+- **Trigger:** Push to `main` on the connected Git repo should redeploy production. If production looks stale while GitHub `main` is correct, open the Vercel project → **Deployments** and confirm builds are running for new commits; reconnect the Git integration under **Settings → Git** if needed.
+- **CLI fallback:** `vercel deploy --prod` from this directory (requires Vercel CLI login). Large files under `sessions/*/docs/` are excluded via [`.vercelignore`](.vercelignore) so uploads stay small.
 
 ## Repo layout
 
