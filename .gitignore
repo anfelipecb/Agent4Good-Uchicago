@@ -3,3 +3,7 @@
 *.swp
 *.swo
 .vercel
+
+# Large local session exports (keep links in HTML; not in git)
+sessions/**/docs/**/*.mp4
+sessions/**/docs/**/*.m4a

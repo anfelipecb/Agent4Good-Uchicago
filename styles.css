@@ -169,6 +169,38 @@ body {
 }
 .availability-banner a:hover .avail-arrow { transform: translateX(3px); }
 
+/* Session feedback survey banner */
+.survey-banner {
+  max-width: 520px;
+  margin: 0 auto 32px;
+}
+.survey-banner a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 14px 24px;
+  border-radius: 16px;
+  background: linear-gradient(135deg, rgba(124, 58, 237, .1), rgba(236, 72, 153, .06));
+  border: 1px solid rgba(124, 58, 237, .35);
+  text-decoration: none;
+  color: #c9cdd4;
+  font-size: 14px;
+  transition: all .25s;
+}
+.survey-banner a:hover {
+  border-color: rgba(167, 139, 250, .55);
+  background: rgba(124, 58, 237, .14);
+}
+.survey-banner a strong { color: #a78bfa; }
+.survey-icon { font-size: 18px; }
+.survey-arrow {
+  color: #a78bfa;
+  font-size: 18px;
+  transition: transform .2s;
+}
+.survey-banner a:hover .survey-arrow { transform: translateX(3px); }
+
 /* Session description & CTA text */
 .session-desc {
   font-size: 14px;
